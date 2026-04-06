@@ -61,10 +61,10 @@ class GovernanceExpert(ExpertModule):
                 break
         if rules_path is None:
             rules_path = "governance_rules.json"
-        super().__init__(module_id="module_b_governance")
-        self.client     = slm_client
-        self.rules_path = rules_path
-        self._rules     = None
+    super().__init__(module_id="module_b_governance")
+    self.client     = slm_client
+    self.rules_path = rules_path
+    self._rules     = None
 
     def _load_rules(self):
         """Load governance rules database (lazy loading)."""
