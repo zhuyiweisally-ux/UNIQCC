@@ -108,7 +108,10 @@ UNIQCC/
     ├── 11_test_modules.py     ← Test all 3 modules (mock mode)
     └── 12_test_council.py     ← End-to-end council test (mock mode)
 ```
-
+> **Note for evaluators:** Scripts `01_download_datasets.py` through 
+> `10_verify_adapters.py` are data pipeline and fine-tuning scripts 
+> for the DGX Spark cluster. To run the evaluation, use only: 
+> `python3 main.py --agent_url https://github.com/FlashCarrot/VeriMedia`
 ---
 
 ## Flask API (for Project 3 Integration)
