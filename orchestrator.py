@@ -30,11 +30,18 @@ from dataclasses import dataclass, field, asdict
 from typing import Optional
 from datetime import datetime
 
-from .expert_module  import ExpertModule, SafetyVerdict, hash_input, hash_output, utc_now
-from .scoring_expert import ScoringExpert
-from .governance_expert import GovernanceExpert
-from .redteam_expert import RedTeamExpert
-from .slm_client     import SLMClient
+try:
+    from .expert_module import ExpertModule, SafetyVerdict, hash_input, hash_output, utc_now
+    from .scoring_expert import ScoringExpert
+    from .governance_expert import GovernanceExpert
+    from .redteam_expert import RedTeamExpert
+    from .slm_client import SLMClient
+except ImportError:
+    from expert_module import ExpertModule, SafetyVerdict, hash_input, hash_output, utc_now
+    from scoring_expert import ScoringExpert
+    from governance_expert import GovernanceExpert
+    from redteam_expert import RedTeamExpert
+    from slm_client import SLMClient
 
 log = logging.getLogger(__name__)
 
