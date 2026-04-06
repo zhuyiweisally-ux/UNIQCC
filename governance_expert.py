@@ -47,7 +47,20 @@ class GovernanceExpert(ExpertModule):
     transcript state machine inherited from Fall 2025 Module B.
     """
 
-    def __init__(self, slm_client: SLMClient, rules_path: str = "data/processed/governance_rules.json"):
+    def __init__(self, slm_client, rules_path=None):
+    if rules_path is None:
+        import os
+        base = os.path.dirname(os.path.abspath(__file__))
+        for candidate in [
+            os.path.join(base, "governance_rules.json"),
+            os.path.join(base, "data/processed/governance_rules.json"),
+            "governance_rules.json",
+        ]:
+            if os.path.exists(candidate):
+                rules_path = candidate
+                break
+        if rules_path is None:
+            rules_path = "governance_rules.json"
         super().__init__(module_id="module_b_governance")
         self.client     = slm_client
         self.rules_path = rules_path
