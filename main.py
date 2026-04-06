@@ -127,7 +127,7 @@ def format_report(report) -> str:
         lines.append("")
     lines.append("── COUNCIL RATIONALE ────────────────────────────────")
     # Print first 600 chars of rationale
-    rationale = report.synthesis_rationale[:600] + ("..." if len(report.synthesis_rationale) > 600 else "")
+    rationale = report.synthesis_rationale[:1500] + ("..." if len(report.synthesis_rationale) > 1500 else "")
     for line in rationale.split("\n"):
         lines.append(f"  {line}")
     lines.append("")
