@@ -48,7 +48,7 @@ class GovernanceExpert(ExpertModule):
     """
 
     def __init__(self, slm_client, rules_path=None):
-      if rules_path is None:
+        if rules_path is None:
         import os
         base = os.path.dirname(os.path.abspath(__file__))
         for candidate in [
