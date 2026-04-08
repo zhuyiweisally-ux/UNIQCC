@@ -10,8 +10,8 @@
 
 ### Step 1 — Clone the repository
 ```bash
-git clone https://github.com/zhuyiweisally-ux/UNIQCC.git
-cd UNIQCC
+git clone https://github.com/zhuyiweisally-ux/UNICC.git
+cd UNICC
 ```
 
 ### Step 2 — Install dependencies
