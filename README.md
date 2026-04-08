@@ -93,7 +93,7 @@ Phase 5 — Synthesis (structured CouncilReport with APPROVE/REVIEW/REJECT)
 ## Project Structure
 
 ```
-UNIQCC/
+UNICC/
 ├── main.py                    ← Entry point — run this
 ├── requirements.txt           ← pip install -r requirements.txt
 ├── expert_module.py           ← Abstract base class + SafetyVerdict schema
