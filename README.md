@@ -104,9 +104,8 @@ UNICC/
 ├── orchestrator.py            ← Council of Experts orchestrator
 ├── api.py                     ← Flask REST API (for Project 3 UI)
 ├── governance_rules.json      ← 38 governance rules database
-└── scripts/
-    ├── 11_test_modules.py     ← Test all 3 modules (mock mode)
-    └── 12_test_council.py     ← End-to-end council test (mock mode)
+├── 11_test_modules.py     ← Test all 3 modules (mock mode)
+└── 12_test_council.py     ← End-to-end council test (mock mode)
 ```
 > **Note for evaluators:** Scripts `01_download_datasets.py` through 
 > `10_verify_adapters.py` are data pipeline and fine-tuning scripts 
