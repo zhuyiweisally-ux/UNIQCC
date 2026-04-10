@@ -131,6 +131,20 @@ Then POST to `http://localhost:5050/evaluate`:
 
 ---
 
+## Web UI (Project 3 Interface)
+
+Open the web interface in your browser:
+
+```bash
+# Step 1 — Start the API (keep this running)
+export ANTHROPIC_API_KEY=your_key_here
+python3 api.py &
+
+# Step 2 — Start the web server
+python3 -m http.server 8080
+```
+
+Then open: `http://localhost:8080/index.html`
 ## No API Keys in This Repository
 
 All API keys are read from environment variables. No secrets are hardcoded anywhere in this codebase.
