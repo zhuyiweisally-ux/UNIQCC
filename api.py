@@ -51,7 +51,7 @@ _report_store = {}   # in-memory store: report_hash -> CouncilReport dict
 _start_time   = datetime.utcnow()
 
 # ── Config ───────────────────────────────────────────────────────────────────
-USE_MOCK      = True    # Set False on DGX Spark with real adapters
+USE_MOCK      = False   # Set False on DGX Spark with real adapters
 PORT          = 5050
 RULES_PATH    = "data/processed/governance_rules.json"
 
