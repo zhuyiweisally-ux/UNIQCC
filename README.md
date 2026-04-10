@@ -16,7 +16,7 @@ cd UNICC
 
 ### Step 2 — Install dependencies
 ```bash
-pip install anthropic flask flask-cors
+pip install -r requirements.txt
 ```
 
 ### Step 3 — Set your API key
