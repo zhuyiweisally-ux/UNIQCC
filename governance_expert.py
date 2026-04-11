@@ -35,8 +35,8 @@ Verdict rules:
 
 
 try:
-    from .expert_module import ExpertModule, SafetyVerdict
-    from .slm_client import SLMClient
+    from expert_module import ExpertModule, SafetyVerdict
+    from slm_client import SLMClient
 except ImportError:
     from expert_module import ExpertModule, SafetyVerdict
     from slm_client import SLMClient
