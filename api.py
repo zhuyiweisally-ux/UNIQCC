@@ -1,6 +1,6 @@
 """
 UNICC AI Safety Lab — Project 2 | Project 3 Handoff
-src/api.py
+
 
 Flask REST API that wraps the Council of Experts orchestrator.
 This is the connection point between Project 2 (evaluation engine)
@@ -14,7 +14,7 @@ Endpoints:
 
 Usage (run on DGX Spark or local):
     pip install flask flask-cors
-    python src/api.py
+    python sapi.py
 
 Project 3 connects to:
     http://localhost:5050
