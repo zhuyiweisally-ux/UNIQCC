@@ -16,7 +16,7 @@ cd UNICC
 
 ### Step 2 — Install dependencies
 ```bash
-pip install -r requirements.txt
+pip install anthropic flask flask-cors
 ```
 
 ### Step 3 — Set your API key
@@ -141,13 +141,15 @@ Open the web interface in your browser:
 ```bash
 # Step 1 — Start the API (keep this running)
 export ANTHROPIC_API_KEY=your_key_here
-python3 api.py &
+python3 api.py
 
-# Step 2 — Start the web server
-python3 -m http.server 8080
+# Step 2 — Open the UI
+open index.html
 ```
 
 Then open: `http://localhost:8080/index.html`
+
+
 ## No API Keys in This Repository
 
 All API keys are read from environment variables. No secrets are hardcoded anywhere in this codebase.
