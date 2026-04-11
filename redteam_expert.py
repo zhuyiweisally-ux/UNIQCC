@@ -10,8 +10,8 @@ Acts as an adversarial attacker-judge:
 """
 
 import json, logging
-from .expert_module import ExpertModule, SafetyVerdict
-from .slm_client import SLMClient
+from expert_module import ExpertModule, SafetyVerdict
+from slm_client import SLMClient
 
 log = logging.getLogger(__name__)
 
