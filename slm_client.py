@@ -79,6 +79,7 @@ class SLMClient:
                 max_tokens=max_new_tokens,
                 system=system_prompt,
                 messages=filtered,
+                temperature=0, 
             )
             return response.content[0].text
         except Exception as e:
