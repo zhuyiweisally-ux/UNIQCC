@@ -70,7 +70,7 @@ def get_orchestrator():
             scoring_expert    = scoring,
             governance_expert = governance,
             redteam_expert    = redteam,
-            run_parallel      = False,   # sequential for stability
+            run_parallel      = True,   # sequential for stability
         )
         log.info("Council of Experts ready")
     return _orchestrator
